@@ -3,7 +3,7 @@ checkpoint_dir: null
 random_seed: 42
 log_every_n_secs: 10
 checkpoint_n_epoch: 1
-num_epoch: 50
+num_epoch: 10
 infrequent_summary_every_n_steps: 0
 use_landmarks_input: True
 class_list: ['neutral',
@@ -14,7 +14,7 @@ class_list: ['neutral',
              'angry']
 dataloader:
   __class_name__: EmotionNetDataloader
-  batch_size: 64
+  batch_size: 8
   face_scale_factor: 1.3
   num_keypoints: 68
   prefetch_num: 3
@@ -31,7 +31,7 @@ dataloader:
     root_path: null
     image_extension: png
     tfrecords_directory_path:
-    - /home/skouchak/test/emotionnet/ckplus/postData
+    - /home/jupyter/emotionnet/postData
     tfrecords_set_id:
     - ckplus
     ground_truth_folder_name:
@@ -44,7 +44,7 @@ dataloader:
   kpiset_info:
     kpi_root_path: null
     kpi_tfrecords_directory_path:
-    - /home/skouchak/test/emotionnet/ckplus/postData
+    - /home/jupyter/emotionnet/postData
     tfrecords_set_id_kpi:
     - ckplus
     ground_truth_folder_name_kpi:
@@ -64,7 +64,7 @@ model:
     activation_type: 'relu'
     dropout_rate: 0.3
     num_class: 6
-    pretrained_model_path: /home/skouchak/test/emotionnet/pretrain_models/emotionnet_vtrainable_v1.0/model.tlt
+    pretrained_model_path: /home/jupyter/emotionnet/pretrain_models/emotionnet_vtrainable_v1.0/model.tlt
     frozen_blocks: 2
 loss:
   __class_name__: EmotionNetLoss
@@ -103,7 +103,7 @@ evaluator:
       root_path: null
       image_extension: png
       tfrecords_directory_path:
-      - /home/skouchak/test/emotionnet/ckplus/postData
+      - /home/jupyter/emotionnet/postData
       tfrecords_set_id:
       - ckplus
       ground_truth_folder_name:
@@ -116,7 +116,7 @@ evaluator:
     kpiset_info:
       kpi_root_path: null
       kpi_tfrecords_directory_path:
-      - /home/skouchak/test/emotionnet/ckplus/postData
+      - /home/jupyter/emotionnet/postData
       tfrecords_set_id_kpi:
       - ckplus
       ground_truth_folder_name_kpi:

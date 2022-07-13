@@ -31,7 +31,7 @@ dataloader:
     root_path: null
     image_extension: png
     tfrecords_directory_path:
-    - /home/hr/tlt-experiments/emotionnet/postData
+    - /home/jupyter/emotionnet/postData
     tfrecords_set_id:
     - ckplus
     ground_truth_folder_name:
@@ -44,7 +44,7 @@ dataloader:
   kpiset_info:
     kpi_root_path: null
     kpi_tfrecords_directory_path:
-    - /home/hr/tlt-experiments/emotionnet/postData
+    - /home/jupyter/emotionnet/postData
     tfrecords_set_id_kpi:
     - ckplus
     ground_truth_folder_name_kpi:
@@ -103,7 +103,7 @@ evaluator:
       root_path: null
       image_extension: png
       tfrecords_directory_path:
-      - /home/hr/tlt-experiments/emotionnet/postData
+      - /home/jupyter/emotionnet/postData
       tfrecords_set_id:
       - ckplus
       ground_truth_folder_name:
@@ -116,7 +116,7 @@ evaluator:
     kpiset_info:
       kpi_root_path: null
       kpi_tfrecords_directory_path:
-      - /home/hr/tlt-experiments/emotionnet/postData
+      - /home/jupyter/emotionnet/postData
       tfrecords_set_id_kpi:
       - ckplus
       ground_truth_folder_name_kpi:
