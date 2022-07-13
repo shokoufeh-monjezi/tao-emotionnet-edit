@@ -3,8 +3,8 @@
     "is_filtered": false,
     "set_name": "ckplus",
     "is_datafactory": true,
-    "org_data_path": "/workspace/tao-experiments/emotionnet/orgData",
-    "post_data_path": "/workspace/tao-experiments/emotionnet/postData",
+    "org_data_path": "/home/skouchak/test/emotionnet/ckplus/orgData",
+    "post_data_path": "/home/skouchak/test/emotionnet/ckplus/postData",
     "num_keypoints": 68,
     "emotion_map": {
         "neutral": 0,
